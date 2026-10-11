@@ -205,7 +205,7 @@
  * The version is compared by equality with the manifest's latest, so a release
  * changes ONLY the version token. Never rename the batch words. */
 #undef PRODUCT
-#define PRODUCT "SoflePLUS2 TPS65 v5.11"
+#define PRODUCT "SoflePLUS2 TPS65 v5.11 Beta"
 
 
 

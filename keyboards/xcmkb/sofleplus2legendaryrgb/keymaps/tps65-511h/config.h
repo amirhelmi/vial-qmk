@@ -315,7 +315,7 @@
 
 /* Keyboard name override for this keymap */
 #undef PRODUCT
-#define PRODUCT "SoflePLUS2 TPS65 Horizontal v5.11h Legendary RGB"
+#define PRODUCT "SoflePLUS2 TPS65 Horizontal v5.11h Legendary RGB Beta"
 
 /* USB Product ID -- distinct per variant so several boards can be plugged in at
  * once. builddefs/build_vial.mk force-defines SERIAL_NUMBER="vial:f64c2b3c" on

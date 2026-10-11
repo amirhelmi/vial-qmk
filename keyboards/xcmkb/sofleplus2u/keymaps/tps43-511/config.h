@@ -202,7 +202,7 @@
 
 /* Keyboard name override for this keymap */
 #undef PRODUCT
-#define PRODUCT "SoflePLUS2 TPS43 v5.11 Signature RGB"
+#define PRODUCT "SoflePLUS2 TPS43 v5.11 Signature RGB Beta"
 
 /* USB Product ID -- distinct per variant so several boards can be plugged in at
  * once. builddefs/build_vial.mk force-defines SERIAL_NUMBER="vial:f64c2b3c" on

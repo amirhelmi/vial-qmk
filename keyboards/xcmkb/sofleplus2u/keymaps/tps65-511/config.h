@@ -205,7 +205,7 @@
 
 /* Keyboard name override for this keymap */
 #undef PRODUCT
-#define PRODUCT "SoflePLUS2 TPS65 v5.11 Signature RGB"
+#define PRODUCT "SoflePLUS2 TPS65 v5.11 Signature RGB Beta"
 
 /* PRODUCT_ID: board default 0x0287, same as sofleplus2/tps65-510 — the PID
  * allocation is per keymap variant (0x0287 vertical, 0x0288 horizontal,

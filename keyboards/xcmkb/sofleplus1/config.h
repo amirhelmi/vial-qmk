@@ -84,7 +84,7 @@
 
 /* Maximum of combo, tap dance in vial */
 #define VIAL_TAP_DANCE_ENTRIES 32
-#define VIAL_COMBO_ENTRIES 32
+#define VIAL_COMBO_ENTRIES 128
 #define VIAL_KEY_OVERRIDE_ENTRIES 32
 #define VIAL_USER_ENTRIES 32
 
