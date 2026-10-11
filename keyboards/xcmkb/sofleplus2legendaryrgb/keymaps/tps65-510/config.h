@@ -205,7 +205,7 @@
 
 /* Keyboard name override for this keymap */
 #undef PRODUCT
-#define PRODUCT "SoflePLUS2 TPS65 v5.10 Legendary RGB"
+#define PRODUCT "SoflePLUS2 TPS65 v5.10.1 Legendary RGB"
 
 /* PRODUCT_ID: board default 0x0287, same as sofleplus2/tps65-510 — the PID
  * allocation is per keymap variant (0x0287 vertical, 0x0288 horizontal,
@@ -220,4 +220,10 @@
  * vial.json ever diverges. */
 #ifdef VIAL_ENABLE
 #define VIAL_KEYBOARD_UID {0x6B, 0xE4, 0x29, 0xC7, 0x5D, 0x18, 0xA3, 0xF0}
+#endif
+
+/* v5.10.1 / v1.10.1: 64 Vial combos (the board config.h has 32). */
+#ifdef VIAL_ENABLE
+#undef VIAL_COMBO_ENTRIES
+#define VIAL_COMBO_ENTRIES 64
 #endif

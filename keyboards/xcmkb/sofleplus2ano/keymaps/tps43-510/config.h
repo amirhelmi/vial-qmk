@@ -202,7 +202,7 @@
 
 /* Keyboard name override for this keymap */
 #undef PRODUCT
-#define PRODUCT "SoflePLUS2 TPS43 v5.10 Legendary"
+#define PRODUCT "SoflePLUS2 TPS43 v5.10.1 Legendary"
 
 /* USB Product ID -- distinct per variant so several boards can be plugged in at
  * once. builddefs/build_vial.mk force-defines SERIAL_NUMBER="vial:f64c2b3c" on
@@ -231,4 +231,10 @@
  * layouts must not share a UID. */
 #ifdef VIAL_ENABLE
 #define VIAL_KEYBOARD_UID {0x7B, 0xD0, 0x45, 0x9E, 0x23, 0x6C, 0xA1, 0xF8}
+#endif
+
+/* v5.10.1 / v1.10.1: 64 Vial combos (the board config.h has 32). */
+#ifdef VIAL_ENABLE
+#undef VIAL_COMBO_ENTRIES
+#define VIAL_COMBO_ENTRIES 64
 #endif

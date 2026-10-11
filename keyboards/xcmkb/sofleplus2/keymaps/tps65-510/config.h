@@ -205,11 +205,17 @@
  * The version is compared by equality with the manifest's latest, so a release
  * changes ONLY the version token. Never rename the batch words. */
 #undef PRODUCT
-#define PRODUCT "SoflePLUS2 TPS65 v5.10"
+#define PRODUCT "SoflePLUS2 TPS65 v5.10.1"
 
 
 
 /* Vial UID for this specific keymap (unique — was still 506's UID after copy) */
 #ifdef VIAL_ENABLE
 #define VIAL_KEYBOARD_UID {0x6B, 0xE4, 0x29, 0xC7, 0x5D, 0x18, 0xA3, 0xF0}
+#endif
+
+/* v5.10.1 / v1.10.1: 64 Vial combos (the board config.h has 32). */
+#ifdef VIAL_ENABLE
+#undef VIAL_COMBO_ENTRIES
+#define VIAL_COMBO_ENTRIES 64
 #endif

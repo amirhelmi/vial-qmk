@@ -341,7 +341,7 @@
  * (builddefs/build_keyboard.mk:509 vs :391-403). The product string is the
  * version marker: the device name in Windows tells you what is flashed. */
 #undef  PRODUCT
-#define PRODUCT "SoflePLUS v1.10"
+#define PRODUCT "SoflePLUS v1.10.1"
 
 /* PRODUCT_ID override — REQUIRED, not cosmetic.
  *
@@ -379,3 +379,9 @@
 /* Vial UID unchanged from v1.02b: it only tells the Vial app which layout to
  * load, and the layout is unchanged (still 10 rows x 6 cols). Keeping it means
  * a client's existing .vil still matches this firmware's key positions. */
+
+/* v5.10.1 / v1.10.1: 64 Vial combos (the board config.h has 32). */
+#ifdef VIAL_ENABLE
+#undef VIAL_COMBO_ENTRIES
+#define VIAL_COMBO_ENTRIES 64
+#endif
