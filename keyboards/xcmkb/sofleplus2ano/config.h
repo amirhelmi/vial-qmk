@@ -62,6 +62,11 @@
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 200U // Timeout window in ms in which the double tap can occur.
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP17 // Specify a optional status led by GPIO number which blinks when entering the bootloader
 
+/* Slow-start crystal fix: when the laptop powers the USB port at boot, VBUS ramps
+ * slowly and the default XOSC wait can expire before the crystal is stable, leaving
+ * a half hung with no LED/OLED until replugged. 64x (~64 ms) gives it time. */
+#define PICO_XOSC_STARTUP_DELAY_MULTIPLIER 64
+
 /* Improved EEPROM storage and wear leveling to prevent keymap loss after replugging */
 /* v3.02 for 16mb. This configuration provides a 4:1 ratio, which is more robust and should offer better wear leveling performance */
 #define WEAR_LEVELING_LOGICAL_SIZE 32768   // 32KB
